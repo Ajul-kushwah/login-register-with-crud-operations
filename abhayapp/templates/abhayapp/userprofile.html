@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Youth_user </title>
+</head>
+<body>
+<h1>Welcome :</h1>
+<h2>Username :</h2>{{ account.username }}
+<h2>Category :</h2>{{ account.category }}
+<pre>
+
+</pre>
+
+<a href="#" class="btn btn-primary">Edit Account</a>
+
+{% if account.category is 'company-user' %}
+    <a href="##" >Add Information</a>
+{% else %}
+    <a href="####" >Add Information</a>
+{% endif %}
+
+<table border="2" align="center" style="height:200px">
+    <tr>
+        <th>First Name</th>
+        <td>{{ account.firstname }}</td>
+    </tr>
+
+    <tr>
+        <th>Last Name</th>
+        <td>{{ account.lastname }}</td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td>{{account.age}}</td>
+
+    <tr>
+        <th>Mobile No.</th>
+        <td>{{ account.mobile }}</td>
+    </tr>
+    <tr>
+        <th>State</th>
+        <td>{{ account.state }}</td>
+    </tr>
+
+    <tr>
+        <th>City</th>
+        <td>{{ account.city }}</td>
+    </tr>
+
+    </tr>
+        <tr>
+        <th>Email Address</th>
+        <td>{{ account.email }}</td>
+    </tr>
+
+</table>
+</body>
+</html>

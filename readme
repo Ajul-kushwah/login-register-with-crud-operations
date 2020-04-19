@@ -1,2 +1,3 @@
-username abhay
-password abhay
+superuser:
+	username abhay
+	password abhay
